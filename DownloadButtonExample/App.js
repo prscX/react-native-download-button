@@ -12,46 +12,51 @@ import {
   View
 } from 'react-native';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import RNDownloadButton from 'react-native-download-button'
 
 export default class App extends Component<{}> {
+  constructor (props) {
+    super(props)
+    this.state = {
+      reset: false,
+      progress: 0
+    }
+  }
+
+  _onPress = () => {
+    setInterval(
+      () => {
+        let progress = 0
+        let reset = false
+
+        if (this.state.progress <= 100) {
+          progress = this.state.progress + 5
+        } else {
+          reset = true
+        }
+
+        this.setState({
+          reset: reset,
+          progress: progress
+        })
+      },
+      1000
+    )
+  }
+
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
-    );
+    return <View style={styles.container}>
+        <RNDownloadButton size={300} progress={this.state.progress} reset={this.state.reset} onPress={this._onPress} />
+      </View>;
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: "#279bee"
+  }
 });

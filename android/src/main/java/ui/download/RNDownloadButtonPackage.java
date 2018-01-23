@@ -1,6 +1,9 @@
 
-package com.reactlibrary;
+package ui.download;
 
+import android.view.ViewManager;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -8,12 +11,15 @@ import java.util.List;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
+
 public class RNDownloadButtonPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNDownloadButtonModule(reactContext));
+        List<NativeModule> modules = new ArrayList<>();
+        modules.add(new RNDownloadButtonModule(reactContext));
+
+        return modules;
     }
 
     // Deprecated from RN 0.47
@@ -22,7 +28,10 @@ public class RNDownloadButtonPackage implements ReactPackage {
     }
 
     @Override
-    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-      return Collections.emptyList();
+    public List<com.facebook.react.uimanager.ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+        List<com.facebook.react.uimanager.ViewManager> modules = new ArrayList<>();
+        modules.add(new RNDownloadButton());
+
+        return modules;
     }
 }
