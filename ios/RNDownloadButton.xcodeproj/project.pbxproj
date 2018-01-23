@@ -8,7 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNDownloadButton.m */; };
+		CE36712020179A9000E51E26 /* libFFCircularProgressView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE36711D20179A8B00E51E26 /* libFFCircularProgressView.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE36711C20179A8B00E51E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE36711720179A8B00E51E26 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BABCBA312DE6CD10AD3A9855E85780E;
+			remoteInfo = FFCircularProgressView;
+		};
+		CE36711E20179A8B00E51E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE36711720179A8B00E51E26 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2EDD20EC2CE6B910A941581F2C609570;
+			remoteInfo = "Pods-RNDownloadButton";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -26,6 +44,10 @@
 		134814201AA4EA6300B7C361 /* libRNDownloadButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDownloadButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNDownloadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDownloadButton.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNDownloadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDownloadButton.m; sourceTree = "<group>"; };
+		BB9CD53ACBE4F5D1A8752B4D /* Pods-RNDownloadButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDownloadButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDownloadButton/Pods-RNDownloadButton.release.xcconfig"; sourceTree = "<group>"; };
+		C8DE342E155073C700D57276 /* libPods-RNDownloadButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNDownloadButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE36711720179A8B00E51E26 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		DB081D580E4A7FC9B00D615A /* Pods-RNDownloadButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDownloadButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDownloadButton/Pods-RNDownloadButton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE36712020179A9000E51E26 /* libFFCircularProgressView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,13 +70,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		37CE9378D49DD8A8E91D457D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE36711720179A8B00E51E26 /* Pods.xcodeproj */,
+				C8DE342E155073C700D57276 /* libPods-RNDownloadButton.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
 				B3E7B5881CC2AC0600A0062D /* RNDownloadButton.h */,
 				B3E7B5891CC2AC0600A0062D /* RNDownloadButton.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				9303C28DF0B81A4037BA2C42 /* Pods */,
+				37CE9378D49DD8A8E91D457D /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		9303C28DF0B81A4037BA2C42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB081D580E4A7FC9B00D615A /* Pods-RNDownloadButton.debug.xcconfig */,
+				BB9CD53ACBE4F5D1A8752B4D /* Pods-RNDownloadButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE36711820179A8B00E51E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE36711D20179A8B00E51E26 /* libFFCircularProgressView.a */,
+				CE36711F20179A8B00E51E26 /* libPods-RNDownloadButton.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDownloadButton" */;
 			buildPhases = (
+				2F0A0405DE2A4441E6328FD1 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
+				A6FBA7E50A1161E21F216DC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,12 +154,71 @@
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE36711820179A8B00E51E26 /* Products */;
+					ProjectRef = CE36711720179A8B00E51E26 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNDownloadButton */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CE36711D20179A8B00E51E26 /* libFFCircularProgressView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFFCircularProgressView.a;
+			remoteRef = CE36711C20179A8B00E51E26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE36711F20179A8B00E51E26 /* libPods-RNDownloadButton.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-RNDownloadButton.a";
+			remoteRef = CE36711E20179A8B00E51E26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F0A0405DE2A4441E6328FD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNDownloadButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6FBA7E50A1161E21F216DC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNDownloadButton/Pods-RNDownloadButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -202,9 +315,10 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB081D580E4A7FC9B00D615A /* Pods-RNDownloadButton.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
@@ -218,6 +332,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB9CD53ACBE4F5D1A8752B4D /* Pods-RNDownloadButton.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

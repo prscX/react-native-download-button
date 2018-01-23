@@ -1,11 +1,13 @@
 
 #if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
+#import "RCTViewManager.h"
 #else
-#import <React/RCTBridgeModule.h>
+#import <React/RCTViewManager.h>
 #endif
 
-@interface RNDownloadButton : NSObject <RCTBridgeModule>
+#import "FFCircularProgressView.h"
+
+@interface RNDownloadButton : RCTViewManager
 
 @end
   

@@ -27,7 +27,9 @@ class RNDownloadButton extends Component {
 
   render() {
     if (Platform.OS === "ios") {
-      return <DownloadButton />;
+      return <TouchableWithoutFeedback onPress={this._onPress}>
+          <DownloadButton style={{ width: this.props.size, height: this.props.size }} props={{ size: this.props.size }} startAnimation={this.state.start} progress={this.props.progress} reset={this.props.reset} />
+       </TouchableWithoutFeedback>
     } else if (Platform.OS === "android") {
       return <TouchableWithoutFeedback onPress={this._onPress}>
           <DownloadButton style={{ width: this.props.size, height: this.props.size }} startAnimation={this.state.start} progress={this.props.progress} reset={this.props.reset} />
@@ -41,7 +43,8 @@ RNDownloadButton.propTypes = {
 
   startAnimation: PropTypes.bool,
   progress: PropTypes.number,
-  reset: PropTypes.bool
+  reset: PropTypes.bool,
+  props: PropTypes.object
 };
 
 RNDownloadButton.defaultProps = {
