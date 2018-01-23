@@ -5,6 +5,7 @@
   "description": "",
   "main": "RNDownloadButton.js",
   "scripts": {
+    "postinstall": "cd ./ios && pod install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
