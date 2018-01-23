@@ -1,53 +1,77 @@
 
-# react-native-download-button
+# React Native Download Button: Android/iOS
+
+React Native Bridge for Android: [fenjuly/ArrowDownloadButton](https://github.com/fenjuly/ArrowDownloadButton) & iOS: [elbryan/FFCircularProgressView](https://github.com/elbryan/FFCircularProgressView)
+
+#### Android
+![](https://github.com/fenjuly/ArrowDownloadButton/raw/master/screenshots/arrowdownloadbutton.gif)
+
+#### iOS
+![](https://camo.githubusercontent.com/9030298750a4792e8e8bdec30219baa644afaf75/68747470733a2f2f7261772e6769746875622e636f6d2f656c627279616e2f464643697263756c617250726f6772657373566965772f6d61737465722f4d656469612f73616d706c652e676966)
+
+Before we dive into on how to use this library. We would like to thank all the contributor of [fenjuly/ArrowDownloadButton](https://github.com/fenjuly/ArrowDownloadButton) & [elbryan/FFCircularProgressView](https://github.com/elbryan/FFCircularProgressView) for providing such a awesome nice, cool library
+
 
 ## Getting started
 
 `$ npm install react-native-download-button --save`
 
-### Mostly automatic installation
-
-`$ react-native link react-native-download-button`
-
-### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-download-button` and add `RNDownloadButton.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNDownloadButton.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
-#### Android
-
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNDownloadButtonPackage;` to the imports at the top of the file
-  - Add `new RNDownloadButtonPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-download-button'
-  	project(':react-native-download-button').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-download-button/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-download-button')
-  	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNDownloadButton.sln` in `node_modules/react-native-download-button/windows/RNDownloadButton.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Download.Button.RNDownloadButton;` to the usings at the top of the file
-  - Add `new RNDownloadButtonPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
+`react-native link react-native-download-button`
 
 ## Usage
+
 ```javascript
 import RNDownloadButton from 'react-native-download-button';
 
 // TODO: What to do with the module?
-RNDownloadButton;
+<RNDownloadButton size={300} progress={this.state.progress} reset={this.state.reset} onPress={this._onPress} />
 ```
-  
+
+## Props
+
+| Prop              | Type       | Default | Note                                                                                                       |
+| ----------------- | ---------- | ------- | ---------------------------------------------------------------------------------------------------------- |
+| `startAnimation`       | `bool`     |         | To start the downloader animation
+| `progress`      | `int`     |         | Set the progress of downloader progress bar
+| `reset`       | `bool`     |         | Reset the downloader to it's inital state                                                            |
+
+
+## Credits
+
+- Android lib [fenjuly/ArrowDownloadButton](https://github.com/fenjuly/ArrowDownloadButton)
+- iOS lib [elbryan/FFCircularProgressView](https://github.com/elbryan/FFCircularProgressView)
+
+## Contribution
+Contributions are welcome and are greatly appreciated! Every little bit helps, and credit will always be given.
+
+
+## License
+Copyright @2017 Pranav Raj Singh Chauhan
+
+RNDownloadButton is provided under the MIT License.
+
+## Other Contributions
+- React Native - Spruce: [react-native-spruce](https://github.com/prscX/react-native-spruce)
+
+![Screenshots](https://github.com/willowtreeapps/spruce-ios/raw/master/imgs/extensibility-tests.gif)
+
+- React Native - App Tour Library: [react-native-taptargetview](https://github.com/prscX/react-native-taptargetview) & [react-native-material-showcase-ios](https://github.com/prscX/react-native-material-showcase-ios)
+
+![Screenshots](https://github.com/KeepSafe/TapTargetView/raw/master/.github/video.gif)
+![Screenshots](https://github.com/aromajoin/material-showcase-ios/raw/master/art/material-showcase.gif?raw=true)
+
+- React Native - Shine Button: [react-native-shine-button](https://github.com/prscX/react-native-shine-button)
+
+![Screenshots](https://raw.githubusercontent.com/ChadCSong/ShineButton/master/demo_shine_others.gif)
+
+- React Native Iconic: [react-native-iconic](https://github.com/prscX/react-native-iconic)
+![Screenshots](https://camo.githubusercontent.com/b18993cbfe91de8abdc0019dc9a6cd44707eec21/68747470733a2f2f6431337961637572716a676172612e636c6f756466726f6e742e6e65742f75736572732f3338313133332f73637265656e73686f74732f313639363538302f766266706f70666c6174627574746f6e332e676966)
+![Screenshots](https://camo.githubusercontent.com/642bd91749dce58abfba00fe1cefdf2cf4213fd3/68747470733a2f2f7261772e6769746875622e636f6d2f62616c7973762f6d6174657269616c2d6d656e752f6d61737465722f6172742f64656d6f2e676966)
+
+- Visual Code Essential Plugins: [vs-essential-plugins](https://github.com/prscX/vs-essential-plugins)
+
+![Screenshots](https://pbs.twimg.com/profile_images/922911523328081920/jEKFRPKV_400x400.jpg)
+
+- Prettier Pack: [prettier-pack](https://github.com/prscX/prettier-pack)
+
+![Screenshots](https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-banner-light.png)
