@@ -33,7 +33,11 @@ import RNDownloadButton from 'react-native-download-button';
 | ----------------- | ---------- | ------- | ---------------------------------------------------------------------------------------------------------- |
 | `startAnimation`       | `bool`     |         | To start the downloader animation
 | `progress`      | `int`     |         | Set the progress of downloader progress bar
-| `reset`       | `bool`     |         | Reset the downloader to it's inital state                                                            |
+| `reset`       | `bool`     |         | Reset the downloader to it's inital state                                                            
+| `iOS: tintColor`       | `string`     |         | Color for setting tint color           
+| `iOS: tickColor`       | `string`     |         | Color for setting tick color           
+| `android: backgroundColor`       | `string`    | | Color for setting background color                     
+|
 
 
 ## Credits
