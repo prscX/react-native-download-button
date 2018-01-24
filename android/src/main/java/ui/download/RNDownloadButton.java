@@ -47,6 +47,29 @@ public class RNDownloadButton extends ViewGroupManager<ViewGroup> {
         return frameLayout;
     }
 
+
+    @ReactProp(name = "lineWidth")
+    public void setLineWidth(FrameLayout downloadButtonFrame, int lineWidth) {
+    }
+
+    @ReactProp(name = "backgroundColor")
+    public void setBackgroundColor(FrameLayout downloadButtonFrame, String backgroundColor) {
+        ArrowDownloadButton downloadButton = (ArrowDownloadButton) downloadButtonFrame.getChildAt(0);
+        downloadButton.setBackgroundColor(Color.parseColor(backgroundColor));
+    }
+
+    @ReactProp(name = "tintColor")
+    public void setTintColor(FrameLayout downloadButtonFrame, String tintColor) {
+        ArrowDownloadButton downloadButton = (ArrowDownloadButton) downloadButtonFrame.getChildAt(0);
+//        downloadButton.setBackgroundColor(Color.parseColor(tintColor));
+    }
+
+    @ReactProp(name = "tickColor")
+    public void setTickColor(FrameLayout downloadButtonFrame, String tickColor) {
+        ArrowDownloadButton downloadButton = (ArrowDownloadButton) downloadButtonFrame.getChildAt(0);
+//        downloadButton.setDrawingCacheBackgroundColor(Color.parseColor(tickColor));
+    }
+
     @ReactProp(name = "startAnimation")
     public void setStartAnimation(FrameLayout downloadButtonFrame, boolean start) {
         ArrowDownloadButton downloadButton = (ArrowDownloadButton) downloadButtonFrame.getChildAt(0);

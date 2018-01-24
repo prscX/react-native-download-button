@@ -46,7 +46,7 @@ export default class App extends Component<{}> {
 
   render() {
     return <View style={styles.container}>
-        <RNDownloadButton size={300} progress={this.state.progress} reset={this.state.reset} onPress={this._onPress} lineWidth={2} tickColor={"#b30000"} tintColor={"#b30000"} />
+        <RNDownloadButton size={300} progress={this.state.progress} reset={this.state.reset} onPress={this._onPress} lineWidth={2} tickColor={"#b30000"} tintColor={"#b30000"} backgroundColor={"#279bee"} />
       </View>;
   }
 }

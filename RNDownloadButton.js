@@ -28,11 +28,11 @@ class RNDownloadButton extends Component {
   render() {
     if (Platform.OS === "ios") {
       return <TouchableWithoutFeedback onPress={this._onPress}>
-          <DownloadButton style={{ width: this.props.size, height: this.props.size }} props={{ size: this.props.size, lineWidth: this.props.lineWidth, tickColor: this.props.tickColor, tintColor: this.props.tintColor }} startAnimation={this.state.start} progress={this.props.progress} reset={this.props.reset} />
+          <DownloadButton style={{ width: this.props.size, height: this.props.size }} props={{ size: this.props.size, lineWidth: this.props.lineWidth, tickColor: this.props.tickColor, tintColor: this.props.tintColor, backgroundColor: this.props.backgroundColor }} startAnimation={this.state.start} progress={this.props.progress} reset={this.props.reset} />
        </TouchableWithoutFeedback>
     } else if (Platform.OS === "android") {
       return <TouchableWithoutFeedback onPress={this._onPress}>
-          <DownloadButton style={{ width: this.props.size, height: this.props.size }} startAnimation={this.state.start} progress={this.props.progress} reset={this.props.reset} />
+          <DownloadButton style={{ width: this.props.size, height: this.props.size }} startAnimation={this.state.start} progress={this.props.progress} reset={this.props.reset} lineWidth={this.props.lineWidth} tickColor={this.props.tickColor} tintColor={this.props.tintColor} backgroundColor={this.props.backgroundColor} />
         </TouchableWithoutFeedback>;
     }
   }
@@ -47,7 +47,8 @@ RNDownloadButton.propTypes = {
   props: PropTypes.object,
   lineWidth: PropTypes.number,
   tickColor: PropTypes.string,
-  tintColor: PropTypes.string
+  tintColor: PropTypes.string,
+  backgroundColor: PropTypes.string
 };
 
 RNDownloadButton.defaultProps = {
