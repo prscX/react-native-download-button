@@ -57,6 +57,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
-    backgroundColor: "#279bee"
+    backgroundColor: Platform.OS === 'ios' ? "#FFFFFF" : "#279bee"
   }
 });

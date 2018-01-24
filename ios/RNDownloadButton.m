@@ -27,11 +27,24 @@ RCT_CUSTOM_VIEW_PROPERTY(props, NSDictonary *, UIView)
 }
 
 
-RCT_CUSTOM_VIEW_PROPERTY(startAnimation, BOOL *, FFCircularProgressView)
+RCT_CUSTOM_VIEW_PROPERTY(startAnimation, bool, UIView)
 {
-    BOOL *start = (BOOL) [json objectForKey: @"startAnimation"];
+    bool start = json;
     if (start) {
-        [view startSpinProgressBackgroundLayer];
+        FFCircularProgressView *downloadButton = [[view subviews] objectAtIndex: 0];
+        [downloadButton startSpinProgressBackgroundLayer];
+    }
+}
+
+RCT_CUSTOM_VIEW_PROPERTY(progress, NSInteger *, UIView)
+{
+    float progress = [json floatValue];
+    if (progress > 0) {
+        progress = progress / 100;
+        
+        FFCircularProgressView *downloadButton = [[view subviews] objectAtIndex: 0];
+        [downloadButton stopSpinProgressBackgroundLayer];
+        [downloadButton setProgress: progress];
     }
 }
 
