@@ -76,7 +76,7 @@ RNDownloadButton is provided under the MIT License.
 
 - React Native Siri Wave View: [react-native-siri-wave-view](https://github.com/prscX/react-native-siri-wave-view)
 
-[](https://cdn.dribbble.com/users/341264/screenshots/2203511/wave.gif)
+![](https://cdn.dribbble.com/users/341264/screenshots/2203511/wave.gif)
 
 - Visual Code Essential Plugins: [vs-essential-plugins](https://github.com/prscX/vs-essential-plugins)
 
