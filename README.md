@@ -1,6 +1,13 @@
 
 # React Native Download Button: Android/iOS
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/react-native-download-button"><img src="http://img.shields.io/npm/v/react-native-download-button.svg?style=flat" /></a>
+  <a href="https://github.com/prscX/react-native-download-button"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
+  <a href="https://github.com/prscX/react-native-download-button#License"><img src="https://img.shields.io/npm/l/react-native-download-button.svg?style=flat" /></a>
+</p>
+
+
 React Native Bridge for Android: [fenjuly/ArrowDownloadButton](https://github.com/fenjuly/ArrowDownloadButton) & iOS: [elbryan/FFCircularProgressView](https://github.com/elbryan/FFCircularProgressView)
 
 #### Android
