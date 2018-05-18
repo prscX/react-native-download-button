@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-download-button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "RNDownloadButton.js",
   "scripts": {
@@ -20,6 +20,6 @@
   "peerDependencies": {
   },
   "devDependencies": {
-    "prettier-pack": "0.0.4"
+    "prettier-pack": "0.0.6"
   }
 }
