@@ -8,11 +8,8 @@ import com.facebook.react.bridge.Callback;
 
 public class RNDownloadButtonModule extends ReactContextBaseJavaModule {
 
-  private final ReactApplicationContext reactContext;
-
   public RNDownloadButtonModule(ReactApplicationContext reactContext) {
     super(reactContext);
-    this.reactContext = reactContext;
   }
 
   @Override
