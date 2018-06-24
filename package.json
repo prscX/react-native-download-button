@@ -16,7 +16,7 @@
     "react-native"
   ],
   "author": "Pranav Raj Singh Chauhan",
-  "license": "MIT",
+  "license": "Apache License",
   "peerDependencies": {
   },
   "devDependencies": {
