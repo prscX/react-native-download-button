@@ -19,11 +19,11 @@ This library is ReactNative bridge around native libraries:
 
 | **Android: [fenjuly/ArrowDownloadButton](https://github.com/fenjuly/ArrowDownloadButton)**             |
 | ----------------- |
-| <img src="https://github.com/fenjuly/ArrowDownloadButton/raw/master/screenshots/arrowdownloadbutton.gif" width="300" height="600" />                  |
+| <img src="https://github.com/fenjuly/ArrowDownloadButton/raw/master/screenshots/arrowdownloadbutton.gif" />                  |
 
 | **iOS: [elbryan/FFCircularProgressView](https://github.com/elbryan/FFCircularProgressView)**             |
 | ----------------- |
-| <img src="https://camo.githubusercontent.com/9030298750a4792e8e8bdec30219baa644afaf75/68747470733a2f2f7261772e6769746875622e636f6d2f656c627279616e2f464643697263756c617250726f6772657373566965772f6d61737465722f4d656469612f73616d706c652e676966" width="300" height="600" />                  |
+| <img src="https://camo.githubusercontent.com/9030298750a4792e8e8bdec30219baa644afaf75/68747470733a2f2f7261772e6769746875622e636f6d2f656c627279616e2f464643697263756c617250726f6772657373566965772f6d61737465722f4d656469612f73616d706c652e676966" />                  |
 
 
 
