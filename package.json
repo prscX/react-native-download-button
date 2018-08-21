@@ -20,6 +20,6 @@
   "peerDependencies": {
   },
   "devDependencies": {
-    "prettier-pack": "0.0.6"
+    "prettier-pack": "0.0.7"
   }
 }
