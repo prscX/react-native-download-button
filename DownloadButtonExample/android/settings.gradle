@@ -1,5 +1,0 @@
-rootProject.name = 'DownloadButtonExample'
-include ':react-native-download-button'
-project(':react-native-download-button').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-download-button/android')
-
-include ':app'

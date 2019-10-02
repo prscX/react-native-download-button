@@ -31,6 +31,31 @@ This library is ReactNative bridge around native libraries:
 
 `$ npm install react-native-download-button --save`
 
+## **RN60 >= RNDB V1 >**
+
+> RN60 above please use `react-native-download-button` V1 and above
+
+- **iOS**
+
+> **iOS Prerequisite:** Please make sure `CocoaPods` is installed on your system
+
+	- Add the following to your `Podfile` -> `ios/Podfile` and run pod update:
+
+
+```
+  use_native_modules!
+
+  pod 'RNDownloadButton', :path => '../node_modules/react-native-download-button/ios'
+```
+
+- **Android**
+
+
+## **RN60 < RNAT V1 <**
+
+> RN60 below please use `react-native-app-tour` V.0.*
+
+
 `react-native link react-native-download-button`
 
 ## 💻 Usage
